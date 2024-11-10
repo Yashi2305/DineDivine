@@ -71,7 +71,7 @@ const PlaceOrder = () => {
     try {
       // Create a Razorpay order by making a request to the backend
       const { data } = await axios.post(
-        "http://localhost:4000/api/payment/create-order",
+        "https://dinedivine.onrender.com/api/payment/create-order",
         {
           amount: totalAmount,
           currency: "INR",
